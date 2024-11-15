@@ -3,7 +3,7 @@
 To start the application for testing, you can run ```docker-compose up``` to launch the database. Then, using the Symfony CLI, you can start the development server.
 ```symfony server:start```
 
-## Endpoints examples
+## Endpoint examples
 
 To test the API, you can use curl:
 

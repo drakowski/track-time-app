@@ -1,0 +1,7 @@
+### POST Endpoint for creating new employee
+POST http://127.0.0.1:8000/api/v1/employees/01932ec5-1c23-7360-9f78-d9017328150e/worktimes
+Content-Type: application/json
+Accept: application/json
+
+{"startDateTime": "19.11.2024 15:00", "endDateTime": "19.11.2024 17:30"}
+###

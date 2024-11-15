@@ -1,0 +1,11 @@
+employee:
+  create:
+    firstNameAndLastName:
+      blankMessage: 'Imie i nazwisko nie mogą być puste.'
+      maxMessage: 'Zbyt długa nazwa.'
+registerWorkingTime:
+    exceeded_working_hours_limit: 'Przekroczono łaczny czas pracy w podanym przedziale limit wynosi {{ limit }}'
+    startDateTime:
+      formatInvalid: 'Błedny format daty.'
+    endDateTime:
+      formatInvalid: 'Błedny format daty.'

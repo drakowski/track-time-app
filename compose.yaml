@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:8.0.37-debian
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-app}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_USER: ${MYSQL_USER:-appuser}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-apppassword}
+    volumes:
+      - db_data:/var/lib/mysql:rw
+  database-test:
+    image: mysql:8.0.37-debian
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-app_test}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_USER: ${MYSQL_USER:-appuser}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-apppassword}
+    volumes:
+      - db_test_data:/var/lib/mysql:rw
+
+volumes:
+  db_data:
+  db_test_data:

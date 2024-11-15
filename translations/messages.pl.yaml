@@ -1,0 +1,10 @@
+employees:
+  create:
+    success: 'Pomyślnie utworzono pracownika.'
+  uuid:
+    notFound: 'Pracownika o podanym uuid nie istnieje.'
+  registerWorkingTime:
+    success: 'Pomyślnie dodano czas za ten okres.'
+    startDateLabel:
+      alreadyExists: 'Czas za ten okres został już zadekretowany.'
+      notFound: 'Nie znaleziono podanego okresu.'

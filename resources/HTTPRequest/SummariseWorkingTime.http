@@ -1,0 +1,4 @@
+### GET Endpoint for creating new employee
+GET http://127.0.0.1:8000/api/v1/employees/01932ec5-1c23-7360-9f78-d9017328150e/worktimes/2024-12/summarise
+Accept: application/json
+###

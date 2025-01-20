@@ -9,15 +9,15 @@ To test the API, you can use curl:
 
 Register new employee
 
-```curl -X POST 127.0.0.1:8000/api/v1/employees -H "Content-Type: application/json" -d '{"first_name_and_last_name":"Jan Kowaslki"}```
+```curl -X POST 127.0.0.1:8000/api/v1/employees -H "Content-Type: application/json" -d '{"firstNameAndLastName":"Jan Kowaslki"}```
 
 Register new worktimes period
 
-```curl -X POST 127.0.0.1:{port}/api/v1/employees/{uuid}/worktimes -H "Content-Type: application/json" -d '{"start_date_time":"02.01.1977 07:40", "end_date_time":"02.01.1977 14:00"}'```
+```curl -X POST 127.0.0.1:{port}/api/v1/employees/{uuid}/worktimes -H "Content-Type: application/json" -d '{"startDateTime":"02.01.1977 07:40", "endDateTime":"02.01.1977 14:00"}'```
 
 Summarise 
 
-```curl -X GET 127.0.0.1:{port}/api/v1/employees/{uuid}/worktimes/{start_period}/summarise```
+```curl -X GET 127.0.0.1:{port}/api/v1/employees/{uuid}/worktimes/{startPeriod}/summarise```
 
 ## Requirements
 
